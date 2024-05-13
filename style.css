@@ -10,9 +10,9 @@ html {
 }
 
 .wrapper {
+    margin: 0.3rem auto;
     font-size: 1.6rem;
     width: 99.95%;
-    margin: auto;
     border: 0.3rem solid black;
 }
 

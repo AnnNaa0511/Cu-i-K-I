@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    font-size: 1.6rem;
+    width: 99.95%;
+    margin: auto;
+    border: 0.3rem solid black;
+}
+
+header {
+    box-shadow: 0 0.5rem 2rem rgb(132, 130, 130);
+    width: 100%;
+    /* position: sticky; */
+    /* top: 0; */
+    /* left: 0; */
+    z-index: 999;
+}
+
+header .container {
+    z-index: 999;
+}
+
+header nav {
+    display: flex;
+    align-items: baseline;   /*Niceeeeeeeeeeeeeeeeeeeeeeeeeeeeee*/
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    align-items: baseline;  /*Niceeeeeeeeeeeeeeeeeeeeeeeeeeeeeee*/
+}
+
+header ul li {
+    padding: 1.5rem 2rem;
+}
+
+header ul li:first-child a {
+    font-size: 2rem;
+}
+
+header ul li:nth-child(2) a {
+    font-family: monospace;
+    margin-top: 0.5rem;;
+}
+
+header ul li:last-child a {
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+header nav form {
+    margin-left: auto;
+    margin-right: 3rem;
+}
+
+header nav form input[type=text] {
+    padding-left: 0.8rem;
+    border-radius: 5px;
+    width: 23rem;
+    height: 3rem;
+}
+
+header nav form input[type=submit] {
+    border-radius: 5px;
+    width: 7rem;
+    height: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.top-content {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0 3rem;
+    /* position: relative; */
+    /* top: 10rem; */
+    margin-top: 3rem;
+    background-color: rgb(10, 10, 89);
+    z-index: -1;
+}
+
+.top-content nav ul {
+    display: flex;
+    align-items: baseline;
+    list-style: none;
+}
+
+.top-content nav ul li a {
+    color: aliceblue;
+    font-family: monospace;
+}
+
+.top-content .logo {
+    color: aliceblue;
+    font-weight: 500;
+    /* padding-top: 0.5rem; */
+}
+
+.top-content .logo span {
+    font-weight: bolder;
+}
+
+.top-content nav ul li {
+    padding: 0.8rem;
+    color: aliceblue;
+    margin-top: 1rem;
+    margin-bottom: 1.8rem;
+}
+
+.top-content nav ul li:not(:last-child) {
+    background-image: radial-gradient(rgb(10 10 89 / 20%), rgb(255 255 255 / 20%));
+}
+
+.top-content nav ul li:last-child {
+    background-color: rgb(255 255 255 / 50%);
+    color: black;
+    font-weight: bold;
+}
+
+.content table {
+    /* padding: 1.5rem; */
+    margin: 2rem;
+    width: 96%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 1.5rem 0 1.5rem 0rem;
+}
+
+.content table tr td img {
+    width: 2rem;
+}
+
+.content table tr {
+    border-top: 0.1rem solid rgb(198, 185, 185);
+}
+.processing {
+    background-color: rgb(255, 187, 0);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+.delay {
+    background-color: rgb(255, 0, 0);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+.urgent {
+    background-color: rgb(0, 255, 30);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+.content table tr td img {
+    cursor: pointer;
+    margin-right: 0.4rem;
+}
+
+.cot1 {
+    width: 5rem;
+}
+
+.content table tbody tr td, .content table thead tr th {
+    padding-left: 1.5rem;
+}
+
+.content table tbody tr:last-child {
+    border-bottom: 1px solid rgb(197, 185, 185);
+}
+
+.content table tbody tr:nth-child(even) {
+    background-color: rgba(231, 226, 226, 0.496);
+}
+
+.content .main-content .footer ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.content .main-content .footer ul li {
+    padding: 1rem 1.5rem;
+    font-family: monospace;
+}
+
+.content .main-content .footer ul li:nth-child(4) {
+    background-color: black;
+    color: aliceblue;
+}
+
+.content .main-content .footer ul li:nth-child(4) a {
+    color: aliceblue;
+}
+
+.content .main-content .footer ul li a {
+    font-family: monospace;
+}
+
+.content .main-content .footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 3rem 1rem 3rem;
+}
+
+.content .main-content .des span:not(.number) {
+    font-family: monospace;
+    font-weight:100;
+}
+
+.content .main-content .des .number {
+    font-family: monospace;
+    font-weight: 800;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CK1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#">TLU</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Manage Work</a></li>
+                    </ul>
+                    <form>
+                        <input type="text" name="search" id="search" placeholder="Search">
+                        <input type="submit" value="Search">
+                    </form>
+                </nav>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="top-content">
+                <h2 class="logo">Manage <span>Work</span></h2>
+                <nav>
+                    <ul>
+                        <li><input type="radio" name="chose" id="chose1" value="All" checked><label for="chose1"> All</label></li>
+                        <li><input type="radio" name="chose" id="chose2" value="Urgent"><label for="chose2"> Urgent</label></li>
+                        <li><input type="radio" name="chose" id="chose3" value="Processing"><label for="chose3"> Processing</label></li>
+                        <li><input type="radio" name="chose" id="chose4" value="Delay"><label for="chose4"> Delay</label></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="main-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="cot1">ID</th>
+                            <th class="cot2">Work</th>
+                            <th class="cot3">Start time</th>
+                            <th class="cot4">Finish time</th>
+                            <th class="cot5">Status</th>
+                            <th class="cot6">Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="cot1">1</td>
+                            <td class="cot2">Finish report - Team leader</td>
+                            <td class="cot3">03/04/2024</td>
+                            <td class="cot4">21/04/2024</td>
+                            <td class="cot5"><span class="processing">Processing</span></td>
+                            <td class="cot6">
+                                <img src="./images/Add.png" alt="add" class="add" onclick="myFunction()">
+                                <img src="./images/Delete.png" alt="delete" class="delete">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cot1">2</td>
+                            <td class="cot2">Finish Customer Website</td>
+                            <td class="cot3">07/04/2024</td>
+                            <td class="cot4">28/08/2024</td>
+                            <td class="cot5"><span class="delay">Delay</span></td>
+                            <td class="cot6">
+                                <img src="./images/Add.png" alt="add" class="add">
+                                <img src="./images/Delete.png" alt="delete" class="delete">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cot1">3</td>
+                            <td class="cot2">Finish Paperwork for Professor</td>
+                            <td class="cot3">01/03/2024</td>
+                            <td class="cot4">09/04/2024</td>
+                            <td class="cot5"><span class="processing">Processing</span></td>
+                            <td class="cot6">
+                                <img src="./images/Add.png" alt="add" class="add">
+                                <img src="./images/Delete.png" alt="delete" class="delete">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cot1">4</td>
+                            <td class="cot2">Finish CCNA Class</td>
+                            <td class="cot3">07/04/2024</td>
+                            <td class="cot4">08/04/2024</td>
+                            <td class="cot5"><span class="urgent">Urgent</span></td>
+                            <td class="cot6">
+                                <img src="./images/Add.png" alt="add" class="add">
+                                <img src="./images/Delete.png" alt="delete" class="delete">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cot1">5</td>
+                            <td class="cot2">Finish Conference presentation</td>
+                            <td class="cot3">01/04/2024</td>
+                            <td class="cot4">28/05/2024</td>
+                            <td class="cot5"><span class="delay">Delay</span></td>
+                            <td class="cot6">
+                                <img src="./images/Add.png" alt="add" class="add" onclick="myFunction()">
+                                <img src="./images/Delete.png" alt="delete" class="delete">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="footer">
+                    <ul class="stt">
+                        <li><a href="#">Previous</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">Next</a></li>
+                    </ul>
+    
+                    <div class="des">
+                        <span>Showing <span class="number">5</span> out of <span class="number">25</span> entries</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="">
+    var element = document.getElementsByClassName("add");
+    function myFunction() {
+        alert("Hellu");
+    }
+    element.addEventListener("click", myFunction())
+</script>
+</html>
